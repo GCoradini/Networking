@@ -75,4 +75,48 @@ enum NetworkingManager {
                 }
             }
     }
+    
+    static func getPost(for user: User, completion: @escaping (Result<[Post], Error>) -> Void) {
+        AF  .request(
+                "https://jsonplaceholder.typicode.com/posts",
+                method: .get,
+                parameters: ["userId": user.id]
+            )
+            .responseData { (response: AFDataResponse<Data>) in
+                switch response.result {
+                case .success(let data):
+                    let decoder = JSONDecoder()
+                    do {
+                        let posts = try decoder.decode([Post].self, from: data)
+                        completion(.success(posts))
+                    } catch {
+                        completion(.failure(error))
+                    }
+                case.failure(let error):
+                    completion(.failure(error))
+                }
+            }
+    }
+    
+    static func getComments(in post: Post, completion: @escaping (Result<[Comment], Error>) -> Void) {
+        AF  .request(
+                "https://jsonplaceholder.typicode.com/comments",
+                method: .get,
+                parameters: ["postId": post.id]
+            )
+            .responseData { (response: AFDataResponse<Data>) in
+                switch response.result {
+                case .success(let data):
+                    let decoder = JSONDecoder()
+                    do {
+                        let comments = try decoder.decode([Comment].self, from: data)
+                        completion(.success(comments))
+                    } catch {
+                        completion(.failure(error))
+                    }
+                case.failure(let error):
+                    completion(.failure(error))
+                }
+            }
+    }
 }

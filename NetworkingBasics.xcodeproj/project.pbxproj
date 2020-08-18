@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		6C1BF1A4F93C74312D556A24 /* Pods_NetworkingBasics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0C20F279948EFAC82A33B /* Pods_NetworkingBasics.framework */; };
+		841A779124EB4D6200E83247 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A778F24EB4D6200E83247 /* CommentTableViewCell.swift */; };
+		841A779224EB4D6200E83247 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841A779024EB4D6200E83247 /* CommentTableViewCell.xib */; };
+		841A779524EB4F6C00E83247 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A779324EB4F6C00E83247 /* PostTableViewCell.swift */; };
+		841A779624EB4F6C00E83247 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841A779424EB4F6C00E83247 /* PostTableViewCell.xib */; };
+		84F3838624EC3F7600C243F1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3838524EC3F7600C243F1 /* Post.swift */; };
+		84F3838824EC3F8400C243F1 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3838724EC3F8400C243F1 /* Comment.swift */; };
 		F4F439B6D2F03309C6E0875B /* Pods_NetworkingBasicsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417945DF7EDAFA6A69AA07A0 /* Pods_NetworkingBasicsTests.framework */; };
 		FA2EF69224E4B31300819686 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2EF69024E4B31300819686 /* UsersViewController.swift */; };
 		FA2EF69324E4B31300819686 /* UsersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2EF69124E4B31300819686 /* UsersViewController.xib */; };
@@ -53,6 +59,12 @@
 		3983186A5E5532BA7E44CC30 /* Pods-NetworkingBasicsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkingBasicsTests.debug.xcconfig"; path = "Target Support Files/Pods-NetworkingBasicsTests/Pods-NetworkingBasicsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		417945DF7EDAFA6A69AA07A0 /* Pods_NetworkingBasicsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkingBasicsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A0C20F279948EFAC82A33B /* Pods_NetworkingBasics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkingBasics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		841A778F24EB4D6200E83247 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		841A779024EB4D6200E83247 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		841A779324EB4F6C00E83247 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		841A779424EB4F6C00E83247 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		84F3838524EC3F7600C243F1 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		84F3838724EC3F8400C243F1 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		98EC673DC0AAE16709CE69F3 /* Pods-NetworkingBasics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkingBasics.debug.xcconfig"; path = "Target Support Files/Pods-NetworkingBasics/Pods-NetworkingBasics.debug.xcconfig"; sourceTree = "<group>"; };
 		EED3CD6570C0488C29C617F5 /* Pods-NetworkingBasics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkingBasics.release.xcconfig"; path = "Target Support Files/Pods-NetworkingBasics/Pods-NetworkingBasics.release.xcconfig"; sourceTree = "<group>"; };
 		FA2EF69024E4B31300819686 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
@@ -128,12 +140,32 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		841A778D24EB4C1E00E83247 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				841A779324EB4F6C00E83247 /* PostTableViewCell.swift */,
+				841A779424EB4F6C00E83247 /* PostTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		841A778E24EB4C2500E83247 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				841A778F24EB4D6200E83247 /* CommentTableViewCell.swift */,
+				841A779024EB4D6200E83247 /* CommentTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		FA2EF69424E4B31600819686 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				FA2EF69824E4B35F00819686 /* User.swift */,
 				FA929D9F24E4BC3900E07A88 /* Album.swift */,
 				FA929DAB24E4BF0D00E07A88 /* Photo.swift */,
+				84F3838524EC3F7600C243F1 /* Post.swift */,
+				84F3838724EC3F8400C243F1 /* Comment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -245,6 +277,7 @@
 		FA929D9024E4B8BF00E07A88 /* Posts */ = {
 			isa = PBXGroup;
 			children = (
+				841A778D24EB4C1E00E83247 /* Cells */,
 				FA929D9224E4B8DD00E07A88 /* PostsViewController.swift */,
 				FA929D9324E4B8DD00E07A88 /* PostsViewController.xib */,
 			);
@@ -254,6 +287,7 @@
 		FA929D9124E4B8CE00E07A88 /* Comments */ = {
 			isa = PBXGroup;
 			children = (
+				841A778E24EB4C2500E83247 /* Cells */,
 				FA929D9624E4B8E600E07A88 /* CommentsViewController.swift */,
 				FA929D9724E4B8E600E07A88 /* CommentsViewController.xib */,
 			);
@@ -374,11 +408,13 @@
 				FA929D9E24E4B95400E07A88 /* UserTableViewCell.xib in Resources */,
 				FA929DAA24E4BEC400E07A88 /* PhotoCollectionViewCell.xib in Resources */,
 				FA929D9924E4B8E600E07A88 /* CommentsViewController.xib in Resources */,
+				841A779624EB4F6C00E83247 /* PostTableViewCell.xib in Resources */,
 				FA929D8B24E4B86A00E07A88 /* AlbumsViewController.xib in Resources */,
 				FA30E18C24E4B1D000069847 /* LaunchScreen.storyboard in Resources */,
 				FA929D9524E4B8DD00E07A88 /* PostsViewController.xib in Resources */,
 				FA929DA524E4BCDB00E07A88 /* AlbumTableViewCell.xib in Resources */,
 				FA2EF69324E4B31300819686 /* UsersViewController.xib in Resources */,
+				841A779224EB4D6200E83247 /* CommentTableViewCell.xib in Resources */,
 				FA929D8F24E4B87400E07A88 /* PhotosViewController.xib in Resources */,
 				FA30E18924E4B1D000069847 /* Assets.xcassets in Resources */,
 			);
@@ -468,6 +504,7 @@
 				FA929D8A24E4B86A00E07A88 /* AlbumsViewController.swift in Sources */,
 				FA929D9824E4B8E600E07A88 /* CommentsViewController.swift in Sources */,
 				FA30E18424E4B1CC00069847 /* BaseViewController.swift in Sources */,
+				841A779124EB4D6200E83247 /* CommentTableViewCell.swift in Sources */,
 				FA929D9D24E4B95400E07A88 /* UserTableViewCell.swift in Sources */,
 				FA929D8524E4B6AD00E07A88 /* BaseNavigationController.swift in Sources */,
 				FA929D9424E4B8DD00E07A88 /* PostsViewController.swift in Sources */,
@@ -476,8 +513,11 @@
 				FA30E18024E4B1CC00069847 /* AppDelegate.swift in Sources */,
 				FA929DA924E4BEC400E07A88 /* PhotoCollectionViewCell.swift in Sources */,
 				FA929DA424E4BCDB00E07A88 /* AlbumTableViewCell.swift in Sources */,
+				84F3838824EC3F8400C243F1 /* Comment.swift in Sources */,
 				FA2EF69724E4B32A00819686 /* NetworkingManager.swift in Sources */,
+				84F3838624EC3F7600C243F1 /* Post.swift in Sources */,
 				FA30E18224E4B1CC00069847 /* SceneDelegate.swift in Sources */,
+				841A779524EB4F6C00E83247 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,6 +673,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KNBYWGK7M7;
 				INFOPLIST_FILE = NetworkingBasics/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -652,6 +693,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KNBYWGK7M7;
 				INFOPLIST_FILE = NetworkingBasics/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -672,7 +714,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YZKU259Z36;
 				INFOPLIST_FILE = NetworkingBasicsTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -695,7 +737,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YZKU259Z36;
 				INFOPLIST_FILE = NetworkingBasicsTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
